@@ -28,7 +28,8 @@ h3 {
 }
 
 nav h3,
-.home-texts button {
+.home-texts button,
+.cta-button {
     color: #F9FAF8;
 }
 
@@ -36,6 +37,7 @@ nav h3,
 .home-container p,
 .home-container button,
 .cta-container,
+.cta-button,
 .footer p {
     font-size: 18px;
     color: #E5E7EB;
@@ -47,9 +49,15 @@ h1 {
     font-weight: 900;
 }
 
-.cta-container,
+.cta-box,
+.cta-button,
 .home-texts button {
     background-color: #3882f6;
+}
+
+.cta-button {
+    border-color: #E5E7EB;
+    border-width: 5px;
 }
 
 h2 {
@@ -96,7 +104,7 @@ nav,
 .home-container,
 .feature-container,
 .quote-container,
-.cta-box,
+.cta-container,
 .footer {
     display: flex;
     justify-content: center;
@@ -137,7 +145,7 @@ h1 {
     width: fit-content;
 }
 
-.home-texts button {
+.home-button {
     font-weight: 700;
     padding: 0.5em 2em;
     border-radius: 0.5em;
@@ -187,10 +195,57 @@ h1 {
 
 .quote-box {
     width: 70%;
-    padding: 100px;
+    padding: 150px 250px 80px;
     margin: 0;
 }
 
 .quote-box h3,h4 {
     margin: 0;
+}
+
+.quote-box h3 {
+    text-align: right;
+    padding: 0.5em 4em;
+}
+
+.cta-box {
+    width: 70%;
+    margin: 90px 0 90px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 50px 200px;
+    align-items: center;
+}
+
+.cta-texts {
+    flex: 2 0 60%;
+}
+
+.cta-box h3,
+.cta-box p {
+    margin: 0;
+}
+
+.cta-box h3 {
+    padding: 0 0 0.5em;
+}
+
+.cta-box a {
+    flex: 1 0 30%;
+    text-align: center;
+}
+
+.cta-button {
+    font-weight: 700;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    border: 2px solid #E5E7EB;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
 }
