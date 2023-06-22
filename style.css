@@ -53,12 +53,14 @@ h2 {
     font-weight: 900;
 }
 
-.quote h4 {
+.quote-box {
+    background-color: #E5E7EB;
+}
+.quote-box h4 {
     font-size: 36px;
     font-style: italic;
     font-weight: 50;
 }
-
 
 
 /* layout */
@@ -86,3 +88,4 @@ nav,
     justify-content: flex-end;
     gap: 30px;
 }
+
