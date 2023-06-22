@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+nav,
+.home-container {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-box {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
