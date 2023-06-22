@@ -57,10 +57,10 @@ h2 {
     font-weight: 900;
 }
 
-.quote-box {
+.quote-container {
     background-color: #E5E7EB;
 }
-.quote-box h4 {
+.quote-container h4 {
     font-size: 36px;
     font-style: italic;
     font-weight: 50;
@@ -95,7 +95,7 @@ nav,
 
 .home-container,
 .feature-container,
-.quote-box,
+.quote-container,
 .cta-box,
 .footer {
     display: flex;
@@ -148,7 +148,7 @@ h1 {
 }
 
 .feature-box {
-    width: 70%;
+    width: 62%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,10 +164,15 @@ h1 {
     display: flex;
     gap: 3em;
     padding: 0;
+    align-items: center;
+    text-align: center;
 }
 
 .feature-box li {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feature-box img {
@@ -180,3 +185,12 @@ h1 {
     object-position: 50% 20%;
 }
 
+.quote-box {
+    width: 70%;
+    padding: 100px;
+    margin: 0;
+}
+
+.quote-box h3,h4 {
+    margin: 0;
+}
