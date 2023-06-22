@@ -10,11 +10,61 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     }
 
+body {
+    color: #1F2937;
+}
+
+/* colors & font */
+
+nav,
+.home-container,
+.footer {
+    background-color: #1f2937;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+nav h3 {
+    color: #F9FAF8;
+}
+
+.nav-links a,
+.home-container p,
+.cta-container,
+.footer p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.cta-container {
+    background-color: #3882f6;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.quote h4 {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 50;
+}
+
+
+
+/* layout */
 
 nav,
 .home-container {
-    background-color: #1f2937;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
