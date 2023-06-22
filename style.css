@@ -12,6 +12,7 @@ html {
 
 body {
     color: #1F2937;
+    margin: 0;
 }
 
 /* colors & font */
@@ -26,12 +27,14 @@ h3 {
     font-size: 24px;
 }
 
-nav h3 {
+nav h3,
+.home-texts button {
     color: #F9FAF8;
 }
 
 .nav-links a,
 .home-container p,
+.home-container button,
 .cta-container,
 .footer p {
     font-size: 18px;
@@ -44,7 +47,8 @@ h1 {
     font-weight: 900;
 }
 
-.cta-container {
+.cta-container,
+.home-texts button {
     background-color: #3882f6;
 }
 
@@ -66,14 +70,14 @@ h2 {
 /* layout */
 
 nav,
-.home-container {
+.home-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-box {
-    width: 1200px;
+    width: 70%;
     display: flex;
     align-items: center;
 }
@@ -87,5 +91,92 @@ nav,
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+}
+
+.home-container,
+.feature-container,
+.quote-box,
+.cta-box,
+.footer {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.home-box {
+    width: 70%;
+    display: flex;
+    gap: 70px;
+    margin: 100px 0 100px;
+}
+
+.home-texts {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+}
+
+.home-img {
+    flex: 1 0 10%;
+    width: 900px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; object-position: 50% 52%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.home-texts a {
+    width: fit-content;
+}
+
+.home-texts button {
+    font-weight: 700;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.feature-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 70px;
+}
+
+.feature-box h2 {
+    padding: 1em;
+    margin: 0;
+}
+
+.feature-box ul {
+    display: flex;
+    gap: 3em;
+    padding: 0;
+}
+
+.feature-box li {
+    flex: 1;
+}
+
+.feature-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.feature-box img.feature-four {
+    object-position: 50% 20%;
 }
 
